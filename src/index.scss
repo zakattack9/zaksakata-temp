@@ -1,0 +1,56 @@
+@import './Utils/variables.scss';
+
+@font-face {
+  font-family: "ObjectSans";
+  src: url("./Fonts/ObjectSansRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ObjectSans";
+  src: url("./Fonts/ObjectSansSlanted.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ObjectSans";
+  src: url("./Fonts/ObjectSansHeavy.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ObjectSans";
+  src: url("./Fonts/ObjectSansHeavySlanted.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-size: 12pt;
+  font-family: "ObjectSans";
+  background-color: $background-color;
+  color: $primary-text-color;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  min-height: 100%;
+}
+
+a {
+  color: $secondary-text-color;
+}
+
+a:active, a:focus {
+  outline: 0;
+  border: none;
+  outline-style: none;
+}

@@ -1,0 +1,49 @@
+@import '../Utils/variables.scss';
+
+@mixin gradient-border(
+  $background, 
+  $color1, 
+  $color2, 
+  $borderRadius: 50px,
+  $direction: 90deg, 
+  $borderWidth: 1px
+) {
+  background-image: linear-gradient($background, $background),
+                    linear-gradient($direction, $color1, $color2);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-sizing: border-box;
+  border: $borderWidth double transparent;
+  border-radius: $borderRadius;
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin vertically-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin desktop-styles {
+  @media (min-width: $min-desktop-width) {
+    @content;
+  }
+}
+
+@mixin tablet-styles {
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+    @content;
+  }
+}
+
+@mixin mobile-styles {
+  @media (max-width: $max-mobile-width) {
+    @content;
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../Utils/variables.scss";
+@import "../../Utils/mixins.scss";
+
+.Home {
+  font-size: 14pt;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-areas: "loader main";
+
+  &__Loader {
+    grid-area: loader;
+    align-self: center;
+    justify-self: end;
+  }
+
+  &__main {
+    grid-area: main;
+    align-self: center;
+    padding-left: 2em;
+  }
+
+  &__header {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-style: italic;
+    color: $primary-text-color;
+  }
+
+  &__message {
+    white-space: pre-line;
+    line-height: 1.4em;
+    color: $secondary-text-color;
+  }
+
+  &__socials {
+    width: 8.1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5em;
+  }
+
+  &__social {
+    stroke-width: 2;
+    
+    &--GitHub {
+      height: 1.86em;
+    }
+    
+    &--LinkedIn {
+      height: 1.82em;
+    }
+
+    &--Medium {
+      height: 1.63em;
+    }
+  }
+}
