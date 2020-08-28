@@ -1,1 +1,1 @@
-### Temporary Landing Page for [zaksakata.com](https://zaksakata.com)
+### Temporary Landing Page for [zaksakata.com](https://zaksakata.com) while [zstoo.com](https://github.com/zakattack9/zstoo.com) is being built
