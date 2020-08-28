@@ -88,7 +88,7 @@
       @include desktop-styles {
         font-size: 15.3em;
         top: -1.4em;
-        left: 0.022em;
+        left: 0.02em;
       }
     }
 
@@ -105,7 +105,7 @@
       @include desktop-styles {
         font-size: 3em;
         top: -8em;
-        left: 0.15em;
+        left: 0.1em;
       }
     }
   }
@@ -126,5 +126,7 @@
     color: $primary-text-color;
     padding: 0.6em 0.5em;
     margin: 1.5em auto;
+    position: relative;
+    z-index: 1;
   }
 }
