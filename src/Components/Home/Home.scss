@@ -4,7 +4,7 @@
 .Home {
   font-size: 14pt;
   height: 100vh;
-  background-image: radial-gradient(rgb(32, 32, 32), $background-color);
+  background-image: radial-gradient(rgb(46, 46, 46), $background-color);
 
   @include mobile-styles {
     font-size: 11pt;
