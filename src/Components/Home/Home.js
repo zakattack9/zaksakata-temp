@@ -11,18 +11,20 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <Loader className="Home__Loader" />
-      <div className="Home__main">
-        <div className="Home__header">Welcome!</div>
-        <div className="Home__message">
-          This site is currently under construction,<br/>
-          but you can contact me through <a className="Contact__contactText--email" href="mailto:sakata.zak@gmail.com">email</a><br/>
-          or check out my socials below.
-        </div>
-        <div className="Home__socials">
-          <GitHub className="Home__social Home__social--GitHub" />
-          <LinkedIn className="Home__social Home__social--LinkedIn" />
-          <Medium className="Home__social Home__social--Medium" />
+      <div className="Home__wrapper">
+        <Loader className="Home__Loader" />
+        <div className="Home__main">
+          <div className="Home__header">Welcome!</div>
+          <div className="Home__message">
+            This site is currently under construction,&nbsp;<br className="Home__break" />
+            but you can contact me through <a className="Home__email" href="mailto:sakata.zak@gmail.com">email</a>&nbsp;<br className="Home__break" />
+            or check out my socials below
+          </div>
+          <div className="Home__socials">
+            <GitHub className="Home__social Home__social--GitHub" />
+            <LinkedIn className="Home__social Home__social--LinkedIn" />
+            <Medium className="Home__social Home__social--Medium" />
+          </div>
         </div>
       </div>
     </div>

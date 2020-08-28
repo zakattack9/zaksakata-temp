@@ -4,20 +4,44 @@
 .Home {
   font-size: 14pt;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 40% auto;
-  grid-template-areas: "loader main";
+  background-image: radial-gradient(rgb(32, 32, 32), $background-color);
+
+  @include mobile-styles {
+    font-size: 11pt;
+  }
+  
+  &__wrapper {
+    @include center;
+    width: min-content;
+    display: flex;
+    flex-flow: row nowrap;
+
+    @include mobile-styles {
+      flex-flow: column nowrap;
+    }
+  }
 
   &__Loader {
-    grid-area: loader;
     align-self: center;
     justify-self: end;
+
+    @include mobile-styles {
+      justify-self: center;
+      margin-bottom: 1.5em;
+      width: 7em;
+    }
   }
 
   &__main {
-    grid-area: main;
     align-self: center;
     padding-left: 2em;
+
+    @include mobile-styles {
+      padding: 0.5em;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
   }
 
   &__header {
@@ -28,9 +52,19 @@
   }
 
   &__message {
+    width: 20em;
     white-space: pre-line;
     line-height: 1.4em;
     color: $secondary-text-color;
+
+    @include mobile-styles {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__email {
+    text-decoration: underline;
   }
 
   &__socials {
@@ -39,22 +73,48 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0.5em;
+    margin-top: 0.8em;
   }
 
   &__social {
     stroke-width: 2;
+    transition: 0.65s;
     
     &--GitHub {
       height: 1.86em;
+      stroke-dasharray: 395 395;
+      stroke-dashoffset: 0;
+
+      &:hover {
+        stroke-dashoffset: -790;
+      }
     }
     
     &--LinkedIn {
       height: 1.82em;
+      stroke-dasharray: 265 265;
+      stroke-dashoffset: 0;
+
+      &:hover {
+        stroke-dashoffset: -530;
+      }
     }
 
     &--Medium {
       height: 1.63em;
+      stroke-dasharray: 485 485;
+      stroke-dashoffset: 0;
+      
+      &:hover {
+        stroke-dashoffset: -970;
+      }
     }
+    
+  }
+
+  &__break {
+   @include mobile-styles {
+     display: none;
+   }
   }
 }
