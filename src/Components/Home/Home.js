@@ -18,7 +18,7 @@ const Home = () => {
           <div className="Home__message">
             This site is currently under construction,&nbsp;<br className="Home__break" />
             but you can contact me through <a className="Home__email" href="mailto:sakata.zak@gmail.com">email</a>&nbsp;<br className="Home__break" />
-            or check out my socials below
+            or check out my links below
           </div>
           <div className="Home__socials">
             <GitHub className="Home__social Home__social--GitHub" />
